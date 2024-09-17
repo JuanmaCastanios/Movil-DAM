@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ejemplo0_HolaMundo</string>
+    <string name="saludo_inicial">Hola mundo desde String xml</string>
+    <string name="boton_saludar">Enviar Troyano</string>
+    <string name="saludo_log">Saludo desde consola</string>
+</resources>
