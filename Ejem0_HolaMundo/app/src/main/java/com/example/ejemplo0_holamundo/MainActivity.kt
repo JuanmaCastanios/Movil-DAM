@@ -96,6 +96,5 @@ class MainActivity : AppCompatActivity() {
                 Log.d("depurando", "El número es $elemento")
 
         }
-
     }
 }
