@@ -68,6 +68,10 @@ class MainActivity : AppCompatActivity() {
         for (numero in arrayNumber){
             Log.d("depurando", "El número es $numero")
         }
+        for (i in 0 until arrayNumber.size){
+            Log.d("depurando", "El número es $numero")
+            Log.d("depurando", "El número es ${arrayNumber.get(i)}")
+        }
 
     }
 }
