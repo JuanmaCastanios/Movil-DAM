@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             else -> Log.d("depurando", "Es otra fecha")
         }
 
-
+        //Hoy 20 de Septiembre
 
     }
 }
