@@ -65,5 +65,9 @@ class MainActivity : AppCompatActivity() {
         var arrayNumber3 = intArrayOf(1,2,3,4,5)
         var arrayCharacters = charArrayOf('a','b','c','d','e')
 
+        for (numero in arrayNumber){
+            Log.d("depurando", "El número es $numero")
+        }
+
     }
 }
