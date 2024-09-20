@@ -72,6 +72,30 @@ class MainActivity : AppCompatActivity() {
             Log.d("depurando", "El número es $numero")
             Log.d("depurando", "El número es ${arrayNumber.get(i)}")
         }
+        var i = 0
+        do {
+            Log.d("depurando", "El número es ${arrayNumber[i]}")
+            i++
+        }while (i<arrayNumber.size)
+
+
+        i=0
+        while (i<arrayNumber.size){
+            Log.d("depurando", "El número es ${arrayNumber[i]}")
+            i++
+        }
+
+        //Arrays bidimensionales
+        var matriz: Array<Array<Int>> = arrayOf(
+            arrayOf(1, 2, 3),
+            arrayOf(4, 5, 6),
+            arrayOf(7, 8, 9)
+        )
+        for (fila in matriz) {
+            for (elemento in fila)
+                Log.d("depurando", "El número es $elemento")
+
+        }
 
     }
 }
