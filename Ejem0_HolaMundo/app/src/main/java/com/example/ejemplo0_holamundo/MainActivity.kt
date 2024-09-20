@@ -60,5 +60,10 @@ class MainActivity : AppCompatActivity() {
 
         //Hoy 20 de Septiembre
 
+        var arrayNumber = arrayOf(1,2,3,4,5)
+        var arrayNumber2 = arrayOf<Int>(1,2,3,4,5)
+        var arrayNumber3 = intArrayOf(1,2,3,4,5)
+        var arrayCharacters = charArrayOf('a','b','c','d','e')
+
     }
 }
