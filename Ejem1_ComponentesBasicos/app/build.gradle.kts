@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.ejemp01_componentesbasicos"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.example.ejemp01_componentesbasicos"
@@ -32,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
