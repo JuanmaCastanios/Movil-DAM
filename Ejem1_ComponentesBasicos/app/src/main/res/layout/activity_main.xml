@@ -16,13 +16,6 @@
         android:textAlignment="center"
         android:textSize="40sp" />
 
-    <EditText
-        android:id="@+id/NombreUsuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text" />
-
     <TextView
         android:id="@+id/texto_saludo"
         android:layout_width="match_parent"
@@ -34,23 +27,5 @@
         android:layout_height="wrap_content"
         android:text="@string/descargar_fotochop_zip"
         android:textSize="21sp" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/CajitaDelPecado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Juan eres tonto" />
-    </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>

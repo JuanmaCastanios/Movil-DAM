@@ -5,11 +5,11 @@ plugins {
 
 android {
     namespace = "com.example.ejemp01_componentesbasicos"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.ejemp01_componentesbasicos"
-        minSdk = 33
+        minSdk = 34
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"

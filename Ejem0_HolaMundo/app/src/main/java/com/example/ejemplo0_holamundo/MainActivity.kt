@@ -78,8 +78,6 @@ class MainActivity : AppCompatActivity() {
             i++
         }while (i<arrayNumber.size)
 
-<<<<<<< HEAD
-=======
 
         i=0
         while (i<arrayNumber.size){
@@ -98,6 +96,6 @@ class MainActivity : AppCompatActivity() {
                 Log.d("depurando", "El número es $elemento")
 
         }
->>>>>>> origin/main
+
     }
 }
