@@ -58,6 +58,46 @@ class MainActivity : AppCompatActivity() {
             else -> Log.d("depurando", "Es otra fecha")
         }
 
+        //Hoy 20 de Septiembre
 
+        var arrayNumber = arrayOf(1,2,3,4,5)
+        var arrayNumber2 = arrayOf<Int>(1,2,3,4,5)
+        var arrayNumber3 = intArrayOf(1,2,3,4,5)
+        var arrayCharacters = charArrayOf('a','b','c','d','e')
+
+        for (numero in arrayNumber){
+            Log.d("depurando", "El número es $numero")
+        }
+        for (i in 0 until arrayNumber.size){
+            Log.d("depurando", "El número es $numero")
+            Log.d("depurando", "El número es ${arrayNumber.get(i)}")
+        }
+        var i = 0
+        do {
+            Log.d("depurando", "El número es ${arrayNumber[i]}")
+            i++
+        }while (i<arrayNumber.size)
+
+<<<<<<< HEAD
+=======
+
+        i=0
+        while (i<arrayNumber.size){
+            Log.d("depurando", "El número es ${arrayNumber[i]}")
+            i++
+        }
+
+        //Arrays bidimensionales
+        var matriz: Array<Array<Int>> = arrayOf(
+            arrayOf(1, 2, 3),
+            arrayOf(4, 5, 6),
+            arrayOf(7, 8, 9)
+        )
+        for (fila in matriz) {
+            for (elemento in fila)
+                Log.d("depurando", "El número es $elemento")
+
+        }
+>>>>>>> origin/main
     }
 }
