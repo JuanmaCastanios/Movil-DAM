@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -43,17 +43,6 @@
                 android:ems="10"
                 android:inputType="text" />
 
-            <TextView
-                android:id="@+id/texto_saludo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/boton_datos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/descargar_fotochop_zip"
-                android:textSize="21sp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -101,5 +90,18 @@
         android:id="@+id/spinner2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/boton_datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descargar_fotochop_zip"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/texto_saludo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
 
 </LinearLayout>

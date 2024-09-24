@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ejercicio1_ComponentesBasicos" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/colorSecundario</item>
+    </style>
+
+    <style name="Theme.Ejercicio1_ComponentesBasicos" parent="Base.Theme.Ejercicio1_ComponentesBasicos" />
+</resources>

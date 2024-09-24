@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         }
         */
         binding.botonDatos.setOnClickListener(){
-            binding.textoSaludo.text = "Hola${binding.NombreUsuario.text}"
+            binding.textoSaludo.text = "Hola a todos"
         }
         var EstadoCivil:String = findViewById<RadioButton>(binding.RGroupEstadoCivil.checkedRadioButtonId).text.toString()
         binding.textoSaludo.text = "Tu estado civíl es ${EstadoCivil}"
