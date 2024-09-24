@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.ejemp01_componentesbasicos"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.ejemp01_componentesbasicos"
@@ -48,4 +48,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(kotlin("script-runtime"))
 }

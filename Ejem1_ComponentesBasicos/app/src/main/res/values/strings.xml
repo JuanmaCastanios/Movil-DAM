@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Ejemp01_ComponentesBasicos</string>
     <string name="descargar_fotochop_zip">Descargar Fotochop.zip</string>
+    <string name="soltero">Soltero</string>
+    <string name="casado">Casado</string>
+    <string name="n_c">N/C</string>
+    <array name="color_favorito">
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+        <item>Amarillo</item>
+    </array>
 </resources>
