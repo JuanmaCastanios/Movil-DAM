@@ -44,6 +44,8 @@ class MainActivity : AppCompatActivity() {
         */
         binding.botonDatos.setOnClickListener(){
             binding.textoSaludo.text = "Hola a todos"
+            var nombreIntroUsuario: String = binding.NombreUsuario.text.toString()
+            (binding.lvListaNombres.adapter as ArrayAdapter<String>).add(nombreIntroUsuario)
         }
         var EstadoCivil:String = findViewById<RadioButton>(binding.RGroupEstadoCivil.checkedRadioButtonId).text.toString()
         binding.textoSaludo.text = "Tu estado civíl es ${EstadoCivil}"
@@ -62,9 +64,12 @@ class MainActivity : AppCompatActivity() {
         }
         var datos_Desplegable = arrayOf("Rojo", "Verde", "Azul", "Amarillo")
 
-        binding.spinner2.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, datos_Desplegable)
+        //binding.spinner2.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, datos_Desplegable)
 
-
+        var listaNombres: ArrayList<String> = ArrayList()
+        listaNombres.add("Juan")
+        listaNombres.add("Pedro")
+        binding.lvListaNombres.adapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, listaNombres)
 
 
     }
