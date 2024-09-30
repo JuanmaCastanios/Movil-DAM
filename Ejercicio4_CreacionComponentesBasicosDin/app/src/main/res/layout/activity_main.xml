@@ -18,12 +18,12 @@
         android:theme="?attr/actionBarTheme"
         app:subtitle="@string/titulo" />
 
-    <EditText
-        android:id="@+id/texto_contraseña"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/texto_contrasena"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberPassword" />
+        android:textAlignment="center"
+        android:textSize="34sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
