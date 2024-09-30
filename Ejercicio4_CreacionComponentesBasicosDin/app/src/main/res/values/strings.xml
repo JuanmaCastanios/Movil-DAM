@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ejercicio4_CreacionComponentesBasicosDin</string>
+    <string name="titulo">Contraseña</string>
+    <string name="mostrar_contrasena">Mostrar Contraseña</string>
+</resources>

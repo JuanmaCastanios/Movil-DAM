@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.ejercicio1_componentesbasicos.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
 
@@ -29,58 +29,26 @@ class MainActivity : AppCompatActivity() {
         var num1:Int = 0
         var num2:Int = 0
 
-        /*
+
         var listener: View.OnClickListener = View.OnClickListener { boton ->
             operacion += (boton as Button).text.toString()
             binding.textoResultado.text = operacion
         }
-        * Hay que meterlo en cada setOnClickListener(listener)
-        */
 
-        binding.boton1.setOnClickListener(){
-            operacion += "1"
-            binding.textoResultado.text = operacion
-        }
+        /*
+        Se implementa en interfaz para no implementar una linea de código para cada boton
+        override fun onClick(boton:View?)
+         */
 
-        binding.boton2.setOnClickListener(){
-            operacion += "2"
-            binding.textoResultado.text = operacion
-        }
-
-        binding.boton3.setOnClickListener(){
-            operacion += "3"
-            binding.textoResultado.text = operacion
-        }
-
-        binding.boton4.setOnClickListener(){
-            operacion += "4"
-            binding.textoResultado.text = operacion
-        }
-
-        binding.boton5.setOnClickListener(){
-            operacion += "5"
-            binding.textoResultado.text = operacion
-        }
-
-        binding.boton6.setOnClickListener(){
-            operacion += "6"
-            binding.textoResultado.text = operacion
-        }
-
-        binding.boton7.setOnClickListener(){
-            operacion += "7"
-            binding.textoResultado.text = operacion
-        }
-
-        binding.boton8.setOnClickListener(){
-            operacion += "8"
-            binding.textoResultado.text = operacion
-        }
-
-        binding.boton9.setOnClickListener(){
-            operacion += "9"
-            binding.textoResultado.text = operacion
-        }
+        binding.boton1.setOnClickListener(listener)
+        binding.boton2.setOnClickListener(listener)
+        binding.boton3.setOnClickListener(listener)
+        binding.boton4.setOnClickListener(listener)
+        binding.boton5.setOnClickListener(listener)
+        binding.boton6.setOnClickListener(listener)
+        binding.boton7.setOnClickListener(listener)
+        binding.boton8.setOnClickListener(listener)
+        binding.boton9.setOnClickListener(listener)
 
         binding.botonSuma.setOnClickListener(){
             num1 = operacion.toInt()

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="#000000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:subtitle="@string/titulo" />
+
+    <EditText
+        android:id="@+id/texto_contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/boton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_botones"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="8px" />
+
+        <Button
+            android:id="@+id/boton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_botones"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="8px" />
+
+        <Button
+            android:id="@+id/boton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_botones"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="8px" />
+
+        <Button
+            android:id="@+id/boton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_botones"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="8px" />
+
+        <Button
+            android:id="@+id/boton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_botones"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="8px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/boton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_botones"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="8px" />
+
+        <Button
+            android:id="@+id/boton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_botones"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="8px" />
+
+        <Button
+            android:id="@+id/boton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_botones"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="8px" />
+
+        <Button
+            android:id="@+id/boton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_botones"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="8px" />
+
+        <Button
+            android:id="@+id/boton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_botones"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="8px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_contrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mostrar_contrasena" />
+
+        <Button
+            android:id="@+id/boton_validar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_botones"
+            android:text="Validar"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="8px" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagen_dado"
+        android:layout_width="62dp"
+        android:layout_height="71dp"
+        app:srcCompat="@drawable/dado" />
+
+    <TextView
+        android:id="@+id/texto_validacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+</LinearLayout>
