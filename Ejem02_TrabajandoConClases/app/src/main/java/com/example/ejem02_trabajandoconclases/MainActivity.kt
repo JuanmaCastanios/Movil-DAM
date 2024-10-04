@@ -42,6 +42,8 @@ class MainActivity : AppCompatActivity() {
             Log.d("depurando", usuario.toString())
             (binding.listaPersonas.adapter as ArrayAdapter<Persona>).add(usuario)
 
+            val personaVacia: Persona = Persona()
+            binding.usuario = personaVacia
             // datos.add(usuario)
             // (binding.listaPersonas.adapter as ArrayAdapter<Persona>).notifyDataSetChanged()
 

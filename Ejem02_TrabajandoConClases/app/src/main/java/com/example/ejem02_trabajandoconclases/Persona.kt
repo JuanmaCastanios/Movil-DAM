@@ -13,6 +13,9 @@ class Persona(var nombre: String): SerHumano(), Atleta {
     constructor(nombre: String, contrasena: String = "0000", edad: Int) : this(nombre, contrasena){
         this.edad = edad
     }
+    constructor(): this("",""){
+
+    }
 
     override fun toString(): String {
         return "Persona(nombre='$nombre', contrasena='$contrasena', edad=$edad)"

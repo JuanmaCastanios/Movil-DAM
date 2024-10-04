@@ -45,6 +45,12 @@ class MainActivity : AppCompatActivity() {
             if(binding.checkBaloncesto.isChecked) deportes.add("Balonceste")
             if(binding.checkTenis.isChecked) deportes.add("Tenis")
 
+            var persona: Persona? = Persona(binding.usuario.nombre)
+
+
+            var personaVacia: Persona =  Persona()
+            binding.usuario = personaVacia
+
             Log.d("Datos Formulario", "Nombre: ${nombre}")
             Log.d("Datos Formulario", "Estado civil:  ${estadoCivil}")
             Log.d("Datos Formulario", "Ciudad: ${ciudad}")
