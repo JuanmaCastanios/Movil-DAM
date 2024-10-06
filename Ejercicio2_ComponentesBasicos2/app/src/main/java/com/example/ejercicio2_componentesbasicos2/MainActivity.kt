@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             if(binding.checkBaloncesto.isChecked) deportes.add("Balonceste")
             if(binding.checkTenis.isChecked) deportes.add("Tenis")
 
-            var persona: Persona? = Persona(binding.usuario.nombre)
+            var persona: Persona = Persona(binding.usuario.nombre)
 
 
             var personaVacia: Persona =  Persona()
@@ -55,6 +55,9 @@ class MainActivity : AppCompatActivity() {
             Log.d("Datos Formulario", "Estado civil:  ${estadoCivil}")
             Log.d("Datos Formulario", "Ciudad: ${ciudad}")
             Log.d("Datos Formulario", "Deportes: ${deportes.joinToString(", ")}")
+            if (persona != null) {
+                Log.d("Datos Guardados", persona.nombre)
+            }
         }
 
 
