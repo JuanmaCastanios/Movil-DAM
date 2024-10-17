@@ -7,4 +7,9 @@ class Persona {
         this.nombre = nombre
         this.contrasena = contrasena
     }
+
+    override fun toString(): String {
+        return "$nombre"
+    }
+
 }

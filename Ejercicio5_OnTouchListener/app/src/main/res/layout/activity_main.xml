@@ -1,70 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:backgroundTint="#ABA9A9"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <data>
+        <variable
+        name="usuario"
+        type="com.example.ejercicio5_ontouchlistener.Persona" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#A9A7A7"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:subtitle="@string/app_name"
-        app:subtitleTextColor="#FFFFFF" />
+        android:backgroundTint="#ABA9A9"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_nombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
-
-
-        <com.google.android.material.textfield.TextInputEditText
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombre" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:background="#A9A7A7"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subtitle="@string/app_name"
+            app:subtitleTextColor="#FFFFFF" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_contrasena"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/til_nombre">
-
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/til_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:text="@{usuario.nombre}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
-    <Spinner
-        android:id="@+id/listaUsuarios"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/til_contrasena"/>
+        <EditText
+            android:id="@+id/til_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{usuario.contrasena}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_nombre" />
 
-    <TextView
-        android:id="@+id/recuadroAzul"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#0F3ADB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/listaUsuarios" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Spinner
+            android:id="@+id/listaUsuarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_contrasena" />
+
+        <TextView
+            android:id="@+id/recuadroAzul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#0F3ADB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/listaUsuarios" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
