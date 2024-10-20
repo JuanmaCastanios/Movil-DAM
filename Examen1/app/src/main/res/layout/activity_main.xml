@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    <variable
+        name="Alumno"
+        type="com.example.examen1.Alumno" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subtitle="@string/app_name"
+            app:subtitleTextColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/botonOpciones"
+            android:layout_width="66dp"
+            android:layout_height="58dp"
+            android:background="@android:drawable/ic_input_add"
+            android:backgroundTint="#000000"
+            app:iconSize="25dp"
+            app:iconTint="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/toolbar"
+            app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+        <TextView
+            android:id="@+id/textoNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Inserte Nombre"
+            app:layout_constraintEnd_toStartOf="@id/campoNombre"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <EditText
+            android:id="@+id/campoNombre"
+            android:layout_width="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@{Alumno.toString()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textoNombre"
+            app:layout_constraintTop_toTopOf="@id/textoNombre"  android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textoCalificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Inserte Calificación"
+            app:layout_constraintEnd_toStartOf="@id/ListaCalificacion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/campoNombre" />
+
+        <Spinner
+            android:id="@+id/ListaCalificacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/textoCalificacion"
+            app:layout_constraintTop_toBottomOf="@id/campoNombre"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/textoSuspensos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="236dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ListaCalificacion" />
+
+        <ListView
+            android:id="@+id/listaAlumnos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textoSuspensos" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
