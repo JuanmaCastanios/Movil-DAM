@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exam 1</string>
+    <string name="inserte_calificacion">Insert Note</string>
+    <string name="inserte_nombre">Insert Name</string>
+</resources>

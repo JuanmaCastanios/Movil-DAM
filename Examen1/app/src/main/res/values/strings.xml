@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Examen1</string>
+    <string name="app_name">Examen 1</string>
+    <string name="inserte_calificacion">Inserte Calificación</string>
+    <string name="inserte_nombre">Inserte Nombre</string>
+    <array name="listaCalificaciones">
+        <item>Suspenso</item>
+        <item>Aprobado</item>
+        <item>Sobresaliente</item>
+    </array>
 </resources>

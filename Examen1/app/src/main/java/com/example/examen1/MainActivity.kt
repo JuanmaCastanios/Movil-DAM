@@ -20,9 +20,6 @@ class MainActivity : AppCompatActivity() {
         binding.alumno = alumno
         var contSuspensos:Int = 0
         binding.textoSuspensos.text = contSuspensos.toString()
-        var listaNotas:Array<String> = arrayOf("Sobresaliente", "Aprobado", "Suspenso")
-        var adaptadorNotas = ArrayAdapter(this,android.R.layout.simple_list_item_1,listaNotas)
-        binding.ListaCalificacion.adapter = adaptadorNotas
         var listaAlumno = mutableListOf<Alumno>()
         var adaptadorAlumnos = ArrayAdapter(this,android.R.layout.simple_list_item_1,listaAlumno)
         binding.listaAlumnos.adapter = adaptadorAlumnos
