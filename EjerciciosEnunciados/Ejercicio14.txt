@@ -1,0 +1,5 @@
+Creamos un activity inicial que llamará a través de un botón a un segundo activity con dos botones, Contar y Finalizar. 
+El botón de Contar incrementará un contador cada vez que se pulse sobre él, 
+después de pulsar en finalizar pasará al primer activity el valor contado y ser á mostrado en un textview.
+Además en el activity inicial habrá un Layout donde según vayamos moviendo el dedo se irá viendo en un TextView la posición X,Y 
+donde tenemos el dedo en ese momento.
