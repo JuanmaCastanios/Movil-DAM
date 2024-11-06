@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/bNavagador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar Navegador" />
+
+    <Button
+        android:id="@+id/bMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mandar E-Mail" />
+
+    <Button
+        android:id="@+id/bTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Llamar Teléfono" />
+
+    <Button
+        android:id="@+id/bMaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar Google Maps" />
+
+    <Button
+        android:id="@+id/bWhatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar WhatsApp" />
+
+    <Button
+        android:id="@+id/bDialogoAlerta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar Dialogo de Alerta" />
+
+    <Button
+        android:id="@+id/bDialogoSelectMultiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar Dialogo de Multiples Opciones" />
+
+    <Button
+        android:id="@+id/bDialogoOpcionUnica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar dialogo de seleccion unica" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</LinearLayout>
