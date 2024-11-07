@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ejercicio9_MenusDialogos</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="finalizar_tambien">Finalizar También</string>
+    <string name="cambiar_idioma">Cambiar de Idioma</string>
+    <string name="titulo">Confirmación</string>
+    <string name="confirmacion">¿Desea finalizar la aplicación?</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="mensaje_despedida">Saliendo de la aplicación...</string>
+</resources>

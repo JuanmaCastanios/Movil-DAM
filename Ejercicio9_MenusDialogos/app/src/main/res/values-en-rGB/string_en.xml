@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exercise9_MenusDialogs</string>
+    <string name="finalizar">Finish</string>
+    <string name="finalizar_tambien">Finish Also</string>
+    <string name="cambiar_idioma">Change Language</string>
+    <string name="titulo">Title</string>
+    <string name="confirmacion">Do you want to close the app?</string>
+    <string name="si">Yes</string>
+    <string name="no">No</string>
+    <string name="mensaje_despedida">Closing app...</string>
+</resources>

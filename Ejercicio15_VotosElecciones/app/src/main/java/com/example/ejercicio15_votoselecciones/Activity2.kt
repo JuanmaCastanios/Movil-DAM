@@ -22,7 +22,7 @@ class Activity2: AppCompatActivity() {
         binding.listaPartidos.adapter = adapterPartidos
 
         binding.botonVotar2.setOnClickListener(){
-
+    /*
             if (binding.listaPartidos.selectedItem.toString().equals("PSOE")){
                 votosPSOE++
             } else if (binding.listaPartidos.selectedItem.toString().equals("PP")){
@@ -32,9 +32,10 @@ class Activity2: AppCompatActivity() {
             } else if (binding.listaPartidos.selectedItem.toString().equals("SUMAR")){
                 votosSUMAR++
             }
-            var resultado:String = "PSOE: " + votosPSOE + "\nPP: " + votosPP + "\nVOX: " + votosVOX + "\nSUMAR: " + votosSUMAR
-
-            setResult(RESULT_OK, intent.putExtra("datoARetornar", Dato(resultado)))
+            var resultado:String = "PSOE: $votosPSOE\nPP: $votosPP\nVOX: $votosVOX\nSUMAR: $votosSUMAR"
+*/
+            var resultado:String = "Juan"
+            setResult(RESULT_OK, intent.putExtra("resultado", Dato(resultado)))
             finish()
         }
     }
