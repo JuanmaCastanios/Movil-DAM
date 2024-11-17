@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Ejem05_LlamandoOtrosActivitys</string>
+    <style name="Base.Theme.Ejem05_LlamandoOtrosActivitys" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Ejem05_LlamandoOtrosActivitys" parent="Base.Theme.Ejem05_LlamandoOtrosActivitys"/>
+</resources>

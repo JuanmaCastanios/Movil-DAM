@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\usuario\\.gradle\\daemon\\8.7\\com.example.ejem05_llamandootrosactivitys.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\usuario\\.gradle\\daemon\\8.7\\com.example.ejem05_llamandootrosactivitys.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.ejem05_llamandootrosactivitys.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.example.ejem05_llamandootrosactivitys.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.ejem05_llamandootrosactivitys.app-mergeDebugResources-3:/layout/activity2.xml",
+        "source": "com.example.ejem05_llamandootrosactivitys.app-main-6:/layout/activity2.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\.gradle\\daemon\\8.7\\com.example.ejem05_llamandootrosactivitys.app-mergeDebugResources-3:\\layout\\activity2.xml",
+        "source": "C:\\Users\\usuario\\.gradle\\daemon\\8.7\\com.example.ejem05_llamandootrosactivitys.app-main-6:\\layout\\activity2.xml"
+    }
+]
