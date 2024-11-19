@@ -27,14 +27,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37ed681f-20fc-4238-a7b3-f228f96dc83d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Ejem07_Menus/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem07_Menus/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejem07_Menus/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem07_Menus/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejem07_Menus/app/src/main/java/com/example/ejem07_menus/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem07_Menus/app/src/main/java/com/example/ejem07_menus/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejem07_Menus/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem07_Menus/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejem07_Menus/app/src/main/res/menu/mi_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem07_Menus/app/src/main/res/menu/mi_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicio9_MenusDialogos/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio9_MenusDialogos/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicio9_MenusDialogos/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio9_MenusDialogos/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicio9_MenusDialogos/app/src/main/java/com/example/ejercicio9_menusdialogos/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio9_MenusDialogos/app/src/main/java/com/example/ejercicio9_menusdialogos/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio20_Fragments/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio20_Fragments/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio20_Fragments/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio20_Fragments/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio20_Fragments/app/src/main/java/com/example/ejercicio20_fragments/Fragment1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio20_Fragments/app/src/main/java/com/example/ejercicio20_fragments/Fragment1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjercicioFragments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EjercicioFragments/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +49,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2osPXpJuZkehpHAhC9bx2SCMBNV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -69,7 +65,11 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Grado/Movil-DAM/Ejem09_PasandoDatoaFragment",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2"
   },
   "keyToStringList": {
     "kotlin-gradle-user-dirs": [

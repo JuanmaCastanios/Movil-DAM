@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="MiFragment"
+        android:textSize="34sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_datoDentroFragment1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserta dato a pasar a Fragment" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/b_pasarDatoFragment1Al2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Pasar dato a Acticity" />
+
+
+    <TextView
+        android:id="@+id/tv_datoRecibido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/etPasarDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/bPasarDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pasar con ViewModel" />
+
+</LinearLayout>
