@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/registro">
+
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.example.examen_2eva.ui.FragmentRegistro.FragmentRegistro"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_registro" />
+
+    <fragment
+        android:id="@+id/totalRegistrados"
+        android:name="com.example.examen_2eva.ui.FragmentTotalRegistros.FragmentTotalRegistros"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_total_registros" />
+
+</navigation>
