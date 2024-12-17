@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    <variable
+        name="Usuario"
+        type="com.example.ejercicio18_sharedpreferencesqlitefragments.Usuario" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="?attr/actionBarSize">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="56dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietNombre"
+                android:text="@{Usuario.nombre}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Télefono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilNombre">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietTelefono"
+                android:text="@{Usuario.telefono}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/bGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            app:layout_constraintTop_toBottomOf="@id/tilTelefono"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/bFinalizar"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <Button
+            android:id="@+id/bFinalizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finalizar"
+            app:layout_constraintTop_toBottomOf="@id/tilTelefono"
+            app:layout_constraintStart_toEndOf="@id/bGuardar"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <Button
+            android:id="@+id/bHistorico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Histórico"
+            app:layout_constraintTop_toBottomOf="@id/bGuardar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/bBorrarHistorico"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <Button
+            android:id="@+id/bBorrarHistorico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar Histórico"
+            app:layout_constraintTop_toBottomOf="@id/bGuardar"
+            app:layout_constraintStart_toEndOf="@id/bHistorico"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <fragment
+            android:id="@+id/nav_host_fragment_activity_main"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/nav_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bHistorico" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
