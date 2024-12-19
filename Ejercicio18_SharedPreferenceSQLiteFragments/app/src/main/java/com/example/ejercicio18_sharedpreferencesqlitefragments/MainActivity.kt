@@ -1,8 +1,11 @@
 package com.example.ejercicio18_sharedpreferencesqlitefragments
 
+import android.R
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.ListFragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -25,8 +28,8 @@ class MainActivity : AppCompatActivity() {
         val usuarioDAO = basedatos.usuarioDao()
 
         val sharedPrefLectura = getSharedPreferences("preferencias", MODE_PRIVATE)
-        var nombre : String? =  sharedPrefLectura.getString("ultimoNombre", "No definido")
-        var telefono : String? =  sharedPrefLectura.getString("ultimoTelefono", "No definido")
+        val nombre : String? =  sharedPrefLectura.getString("ultimoNombre", "No definido")
+        val telefono : String? =  sharedPrefLectura.getString("ultimoTelefono", "No definido")
         binding.usuario = Usuario(nombre!! , telefono!!)
 
         binding.bGuardar.setOnClickListener(){
@@ -34,8 +37,8 @@ class MainActivity : AppCompatActivity() {
             usuarioDAO?.insertar(nuevoUsuario)
             val sharedPreference = getSharedPreferences("preferencias", MODE_PRIVATE)
             val editor = sharedPreference.edit()
-            editor.putString("UltimoNombre", nuevoUsuario.nombre)
-            editor.putString("UltimoTelefono", nuevoUsuario.telefono)
+            editor.putString("ultimoNombre", nuevoUsuario.nombre)
+            editor.putString("ultimoTelefono", nuevoUsuario.telefono)
             editor.commit()
             binding.tietNombre.text?.clear()
             binding.tietTelefono.text?.clear()
@@ -44,6 +47,25 @@ class MainActivity : AppCompatActivity() {
 
         binding.bFinalizar.setOnClickListener(){
             System.exit(0)
+        }
+
+        binding.bHistorico.setOnClickListener(){
+            val fManager = supportFragmentManager
+            val fManagerTrans = fManager.beginTransaction()
+            val fragment = FragmentLista()
+            val databundle = Bundle()
+            databundle.putBoolean("confirmacion",true)
+            fragment.arguments = databundle
+            fManagerTrans.add(binding.fLista.id, fragment).commit()
+        }
+
+        binding.bBorrarHistorico.setOnClickListener(){
+            usuarioDAO?.eliminarLista()
+            val sharedPreference = getSharedPreferences("preferencias", MODE_PRIVATE)
+            val editor = sharedPreference.edit()
+            editor.putString("ultimoNombre", "")
+            editor.putString("ultimoTelefono","")
+            editor.commit()
         }
     }
 }

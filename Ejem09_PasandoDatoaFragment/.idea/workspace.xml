@@ -27,10 +27,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37ed681f-20fc-4238-a7b3-f228f96dc83d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Ejercicio20_Fragments/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio20_Fragments/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejem16_BaseDatos/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem16_BaseDatos/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/java/com/example/ejercicio18_sharedpreferencesqlitefragments/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/java/com/example/ejercicio18_sharedpreferencesqlitefragments/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/java/com/example/ejercicio18_sharedpreferencesqlitefragments/ui/dashboard/DashboardFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/java/com/example/ejercicio18_sharedpreferencesqlitefragments/ui/dashboard/DashboardViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/java/com/example/ejercicio18_sharedpreferencesqlitefragments/ui/home/HomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/java/com/example/ejercicio18_sharedpreferencesqlitefragments/ui/home/HomeViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/java/com/example/ejercicio18_sharedpreferencesqlitefragments/ui/notifications/NotificationsFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/java/com/example/ejercicio18_sharedpreferencesqlitefragments/ui/notifications/NotificationsViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/res/layout/fragment_dashboard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/res/layout/fragment_notifications.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio18_SharedPreferenceSQLiteFragments/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ejercicio20_Fragments/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio20_Fragments/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicio20_Fragments/app/src/main/java/com/example/ejercicio20_fragments/Fragment1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio20_Fragments/app/src/main/java/com/example/ejercicio20_fragments/Fragment1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjercicioFragments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EjercicioFragments/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +77,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Grado/Movil-DAM/Ejem09_PasandoDatoaFragment",
     "project.structure.last.edited": "Modules",
@@ -140,9 +153,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
